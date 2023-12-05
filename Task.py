@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, udf, lit
+from pyspark.sql.functions import col, udf, lit, split
 from pyspark.sql.types import StringType
 import requests
 
@@ -39,14 +39,15 @@ def call_api_for_country(car_brand, api_url):
         return f'Error: {str(e)}'
 
 
-def extract_car_model_and_origin(spark, api_url, df_car, output_csv_path):
+def extract_car_model_and_origin(spark, api_url, df_sheet, output_csv_path):
     # Select only the relevant columns
-    car_models = df_car.select(col('Car_Brand')).distinct()
+    car_models = df_sheet.select(col('Make_Model')).distinct()
+    print(car_models.show())
 
     # Add a new column 'Country_of_Origin' using the API
     car_models_with_origin = car_models.withColumn(
         'Country_of_Origin',
-        call_api_for_country_udf(col('Car_Brand'), lit(api_url))
+        call_api_for_country_udf(split(col('Make_Model'), ' ').getItem(0), lit(api_url))
     )
 
     # Save the results to a new CSV file
@@ -73,5 +74,5 @@ if __name__ == '__main__':
     # Replace 'http://localhost:8080/api/cars/search' with the actual URL of your API
     api_url = 'http://127.0.0.1:8080/cars/getbyBrand'
 
-    extract_car_model_and_origin(spark_session, api_url, df_spark_car, output_csv_path)
+    extract_car_model_and_origin(spark_session, api_url, df_sparkTotalThefts, output_csv_path)
     print("Doneeee")
