@@ -36,6 +36,11 @@ def extract_car_model_and_origin(spark, api_url, df_sheet, output_base_path):
         'Country_of_Origin',
         call_api_for_country_udf(split(col('Make_Model'), ' ').getItem(0), lit(api_url))
     )
+
+    # Cache the DataFrame to avoid recomputation
+    # This step reduce the time about 10s - run time was 22s now it 11.8 s -
+    car_models_with_origin.cache()
+
     print(car_models_with_origin.show())
     # Repartition by 'Country_of_Origin' for better parallelism
     car_models_with_origin = car_models_with_origin.repartition('Country_of_Origin')
@@ -67,7 +72,6 @@ if __name__ == '__main__':
 
     if not os.path.exists(output_base_path):
         os.makedirs(output_base_path)
-
 
     extract_car_model_and_origin(spark_session, api_url, df_sparkTotalThefts, output_base_path)
     print("Doneeee")
