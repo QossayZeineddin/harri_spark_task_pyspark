@@ -44,6 +44,7 @@ def extract_car_model_and_origin(spark, api_url, df_sheet, output_csv_path):
     car_models = df_sheet.select(col('Make_Model')).distinct()
     print(car_models.show())
 
+
     # Add a new column 'Country_of_Origin' using the API
     car_models_with_origin = car_models.withColumn(
         'Country_of_Origin',

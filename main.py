@@ -18,6 +18,7 @@ def readDataSetBySpark(spark):
     print(df_spark_car.printSchema())
     return df_spark_car , df_spark_sheet, df_sparkTotalThefts
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     spark = startSparkSeesion()
