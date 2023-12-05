@@ -34,6 +34,9 @@ def extract_car_model_and_origin(sc, api_url, rdd_sheet, output_base_path):
         return call_api_for_country(car_model.split(' ')[0], api_url)
 
     car_models_with_origin = car_models.map(lambda car_model: (car_model, call_api_for_country_rdd(car_model)))
+    # Cache the RDD for later reuse
+    car_models_with_origin.cache()
+
     print(car_models_with_origin.collect())
 
     # Repartition by 'Country_of_Origin' for better parallelism using custom partitioner
