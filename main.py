@@ -37,8 +37,8 @@ def extract_car_model_and_origin(sc, api_url, rdd_sheet, output_base_path):
     print(car_models_with_origin.collect())
 
     # Repartition by 'Country_of_Origin' for better parallelism using custom partitioner
-    custom_partitioner = CustomHashPartitioner(4)
-    car_models_with_origin = car_models_with_origin.partitionBy(4, custom_partitioner)
+    custom_partitioner = CustomHashPartitioner(2)
+    car_models_with_origin = car_models_with_origin.partitionBy(2, custom_partitioner)
 
     # Collect distinct countries to process each partition separately
     countries = car_models_with_origin.map(lambda x: x[1]).distinct().collect()
