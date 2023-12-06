@@ -46,24 +46,24 @@ def extract_car_model_and_origin(sc, api_url, rdd_sheet, output_base_path):
     # Collect distinct countries to process each partition separately
     countries = car_models_with_origin.map(lambda x: x[1]).distinct().collect()
 
-    def write_partition_to_file(output_base_path):
-        def _write_partition(country):
-            country_rdd = car_models_with_origin.filter(lambda x: x[1] == country)
-            file_path = f'{output_base_path}/country_{country}.csv'
+    def write_partition_to_file(country):
 
-            country_rdd.map(lambda x: x[0]).saveAsTextFile(file_path)
+        country_rdd = car_models_with_origin.filter(lambda x: x[1] == country)
+        file_path = f'{output_base_path}/country_{country}.csv'
+        country_rdd.map(lambda x: x[0]).saveAsTextFile(file_path)
 
-        return _write_partition
+
 
     # Apply the function to each distinct country
     for country in countries:
-        write_partition_to_file(output_base_path)(country)
+        write_partition_to_file(country)
 
 class CustomHashPartitioner:
     def __init__(self, num_partitions):
         self.num_partitions = num_partitions
 
     def __call__(self, key):
+        print(key)
         return hash(key) % self.num_partitions
 
 if __name__ == '__main__':
