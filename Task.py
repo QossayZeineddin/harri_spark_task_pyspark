@@ -100,6 +100,11 @@ def update_dataset(original_df, updated_df):
     return full_joined_df.drop('composite_key')
 
 
+def create_or_clear_directory(directory_path):
+    if os.path.exists(directory_path):
+        shutil.rmtree(directory_path)
+    os.makedirs(directory_path)
+
 def spark_sql_query(df_report, df_carModel_Country):
     # Top 5 stolen car models
     top_stolen_models = (
@@ -126,7 +131,7 @@ def spark_sql_query(df_report, df_carModel_Country):
     # group by 'Country_of_Origin' and count occurrences
     country_counts = joined_df.groupBy('Country_of_Origin').count()
     # sort the results in descending order of count
-    sorted_country_counts = country_counts.orderBy(desc('count'))
+    sorted_country_counts = country_counts.orderBy(desc('count')).limit(1)
 
     # Show the results
     print("Top 5 stolen car models:")
@@ -138,17 +143,15 @@ def spark_sql_query(df_report, df_carModel_Country):
     print("\nMost common country of origin for car models purchased by Americans:")
     sorted_country_counts.show()
 
-def create_or_clear_directory(directory_path):
-    if os.path.exists(directory_path):
-        shutil.rmtree(directory_path)
-    os.makedirs(directory_path)
 
 
 # Main Execution Block
 if __name__ == '__main__':
 
     output_base_path3 = "taskfiles/Logging/file.log"
-    create_or_clear_directory(output_base_path3)
+    if not os.path.exists("taskfiles/Logging"):
+        os.makedirs("taskfiles/Logging")
+
     # Configure logging
     logging.basicConfig(
         level=logging.DEBUG,
