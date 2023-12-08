@@ -135,21 +135,21 @@ Build a Spark application to extract results from the provided datasets.
    - List the top 5 states based on the number of stolen cars.
    - Determine the most common country of origin for car models purchased by Americans, using SQL syntax.
   
-   Method Explanation:
-
-    Top 5 Stolen Car Models:
-        Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to             the top 5 results.
-
-    Top 5 States with the Most Stolen Cars:
-        Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
-
-    Most Common Country of Origin:
-        Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
-        Group the resulting DataFrame by 'Country_of_Origin' and count the occurrences of each country.
-        Sort the results in descending order based on the count.
-
-    Display Results:
-        Display the results for each analysis using the show() method.
+       Method Explanation:
+    
+        Top 5 Stolen Car Models:
+            Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to             the top 5 results.
+    
+        Top 5 States with the Most Stolen Cars:
+            Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
+    
+        Most Common Country of Origin:
+            Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
+            Group the resulting DataFrame by 'Country_of_Origin' and count the occurrences of each country.
+            Sort the results in descending order based on the count.
+    
+        Display Results:
+            Display the results for each analysis using the show() method.
 
 ## Usage
 
