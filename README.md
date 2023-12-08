@@ -1,4 +1,4 @@
-# harri_spark_task_pyspark
+# Harri_spark_task_pyspark
 
 # Car Theft Analysis
 
@@ -22,7 +22,7 @@ when yoy run the server we have multy get requset to get the data
 
 This project utilizes MariaDB to create and manage the database. If you prefer a different SQL server, you can make the necessary adjustments by following these steps:
 
-#### 1. Update Pom.xml and application.properties
+####  Update Pom.xml and application.properties
 
 Navigate to the `pom.xml` file and modify the database dependency to match your preferred SQL server. Replace the existing dependency with the appropriate one for your chosen database.
 
@@ -36,28 +36,41 @@ Navigate to the `pom.xml` file and modify the database dependency to match your 
 ```
 Open the application.properties file and adjust the database driver to match the driver class for your SQL server. Replace the existing driver class with the one required for your chosen SQL server.
  Replace the following driver class with the appropriate one for your SQL server and change the database root name and sql password 
+```
 spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.username=admin
+spring.datasource.url=jdbc:mariadb://localhost:3306/harri_task_API
 
+```
 ### Database Tables
 
 ![Screenshot from 2023-12-08 14-23-53](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/2a81db44-8c2f-49be-8d19-32c1528c70dc)
-attae
 
 
-### Spark Part
+
+## Spark Part
 
 Build a Spark application to extract results from the provided datasets.
+-at first i desad to use Sprak RDD but this step need alot of study and search so i swach to use spark DataFrame-
 
 1. **Read Dataset and Extract Car Model and Country of Origin**
    - Read the dataset and extract a file containing the car model and its country of origin, utilizing the API built in the previous step.
-   - Enhance the solution to generate a file for each country. Expect the input dataset to potentially exceed 100 GB, so parallelism is crucial.
+     -"Initially, I considered using Spark RDDs for this step. However, due to the complexity , time limit and after conducting research, I opted to leverage the more streamlined and optimized approach provided by Spark DataFrames.-
+     ```
+     df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
+     ```
    - Optimize performance using proper caching.
+       Implement caching mechanisms, both at the Spark RDD and DataFrame levels, to store intermediate results that can be reused across multiple operations. This can significantly         reduce the need to recalculate certain values.
+     ```
+         car_models_with_origin.cache()
 
+     ```
+         this step decreasing the run time of the appleaction around 15 sec
 2. **Update Records**
    - Read a file with updated records and merge them with the original dataset. Consider the key for your dataset to be a combination of all columns except the rank column.
 
 3. **Analysis Using SQL**
-   - List the top 5 stolen car models in the U.S.
+   - List the top 5 stolen car models in the U.S. 
    - List the top 5 states based on the number of stolen cars.
    - Determine the most common country of origin for car models purchased by Americans, using SQL syntax.
 
