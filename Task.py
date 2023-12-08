@@ -4,6 +4,7 @@ import requests
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf, lit, split, concat_ws,coalesce,desc
 from pyspark.sql.types import StringType
+import logging
 
 
 # Start Spark Session
@@ -137,33 +138,42 @@ def spark_sql_query(df_report, df_carModel_Country):
     print("\nMost common country of origin for car models purchased by Americans:")
     sorted_country_counts.show()
 
+def create_or_clear_directory(directory_path):
+    if os.path.exists(directory_path):
+        shutil.rmtree(directory_path)
+    os.makedirs(directory_path)
+
 
 # Main Execution Block
 if __name__ == '__main__':
+
+    output_base_path3 = "taskfiles/Logging/file.log"
+    create_or_clear_directory(output_base_path3)
+    # Configure logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.FileHandler(output_base_path3, mode="w")  # Log to a file
+        ]
+    )
+    logging.info("Starting the main execution block...")
 
     file_paths = ['taskfiles/cars.csv', 'taskfiles/Sheet1.csv', 'taskfiles/2015_State_Top10Report_wTotalThefts.csv']
     updated_file_path = 'taskfiles/Sheet1.csv'
     api_url = 'http://127.0.0.1:8080/cars/getbyBrand'
     output_base_path1 = 'taskfiles/output_API'  # where each car model with its country
     output_base_path2 = 'taskfiles/output_updated'  # the result of updated data from sheet1
+    create_or_clear_directory(output_base_path1)
+    create_or_clear_directory(output_base_path2)
+
+
 
     spark_session = start_spark_session()
     dfs = read_data_set_by_spark(spark_session, file_paths)
     df_spark_car, df_spark_sheet, df_sparkTotalThefts = dfs
 
-    if not os.path.exists(output_base_path1):
-        os.makedirs(output_base_path1)
-    else:
-        # If the directory already exists, delete it and recreate
-        shutil.rmtree(output_base_path1)
-        os.makedirs(output_base_path1)
-
-    if not os.path.exists(output_base_path2):
-        os.makedirs(output_base_path2)
-    else:
-        # If the directory already exists, delete it and recreate
-        shutil.rmtree(output_base_path2)
-        os.makedirs(output_base_path2)
 
     updated_dataset = update_dataset(df_sparkTotalThefts, df_spark_sheet)
     #for count query
@@ -174,4 +184,11 @@ if __name__ == '__main__':
     df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
 
     spark_sql_query(updated_dataset, df_carModel_Country)
+
+    logging.info("Closing down client-server connection")
+    logging.info("end the main execution block...")
+
+    # To See spark UI at http://localhost:4040
+    #while True:
+    #    pass
 

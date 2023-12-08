@@ -1,16 +1,18 @@
 import os
 import shutil
-
 import requests
 from pyspark import SparkContext
+
 
 def start_spark_context():
     sc = SparkContext(appName="CarOriginExtraction")
     return sc
 
+
 def read_data_set_by_spark(sc, file_paths):
     rdds = [sc.textFile(file_path) for file_path in file_paths]
     return tuple(rdds)
+
 
 def call_api_for_country(car_brand, api_url):
     try:
@@ -26,6 +28,7 @@ def call_api_for_country(car_brand, api_url):
         return country_of_origin
     except Exception as e:
         return f'Error: {str(e)}'
+
 
 def extract_car_model_and_origin(sc, api_url, rdd_sheet, output_base_path):
     car_models = rdd_sheet.map(lambda row: row.split(',')[2]).distinct()
@@ -58,6 +61,7 @@ def extract_car_model_and_origin(sc, api_url, rdd_sheet, output_base_path):
     for country in countries:
         write_partition_to_file(country)
 
+
 class CustomHashPartitioner:
     def __init__(self, num_partitions):
         self.num_partitions = num_partitions
@@ -65,6 +69,7 @@ class CustomHashPartitioner:
     def __call__(self, key):
         print(key)
         return hash(key) % self.num_partitions
+
 
 if __name__ == '__main__':
     file_paths = ['taskfiles/cars.csv', 'taskfiles/Sheet1.csv', 'taskfiles/2015_State_Top10Report_wTotalThefts.csv']
@@ -86,6 +91,8 @@ if __name__ == '__main__':
     print("Doneeee")
 
 
+
+    # To go with spark RDD need to alot of time for study it and understand it and its used so lets do the task with spark dataFrame
 
 
     #However, keep in mind that using parallelize is different from reading data from external sources like files.
