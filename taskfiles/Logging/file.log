@@ -1,0 +1,5058 @@
+2023-12-08 21:44:48 [INFO] Starting the main execution block...
+2023-12-08 21:44:50 [DEBUG] GatewayClient.address is deprecated and will be removed in version 1.0. Use GatewayParameters instead.
+2023-12-08 21:44:50 [DEBUG] Command to send: A
+b62c18ee4dd179140a6224d9b2c600bded61e8a0591a6186f3d4c16159d3df16
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.SparkConf
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.api.java.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.api.python.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.ml.python.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.mllib.api.python.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.resource.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.sql.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.sql.api.python.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+org.apache.spark.sql.hive.*
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: j
+i
+rj
+scala.Tuple2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yv
+2023-12-08 21:44:50 [DEBUG] Command to send: r
+u
+SparkConf
+rj
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ycorg.apache.spark.SparkConf
+2023-12-08 21:44:50 [DEBUG] Command to send: i
+org.apache.spark.SparkConf
+bTrue
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro0
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+set
+sspark.app.name
+sCarOriginExtraction
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro1
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.serializer.objectStreamReset
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybfalse
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+set
+sspark.serializer.objectStreamReset
+s100
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro2
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.rdd.compress
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybfalse
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+set
+sspark.rdd.compress
+sTrue
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro3
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.master
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.app.name
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.master
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+get
+sspark.master
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yslocal[*]
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.app.name
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+get
+sspark.app.name
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysCarOriginExtraction
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+contains
+sspark.home
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ybfalse
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o0
+getAll
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yto4
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i0
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro5
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o5
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.app.name
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o5
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysCarOriginExtraction
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro6
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o6
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.app.submitTime
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o6
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ys1702064690517
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro7
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o7
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.rdd.compress
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o7
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysTrue
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i3
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro8
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o8
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.serializer.objectStreamReset
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o8
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ys100
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro9
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o9
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.master
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o9
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yslocal[*]
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i5
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro10
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o10
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.submit.pyFiles
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o10
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ys
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i6
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro11
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o11
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.submit.deployMode
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o11
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysclient
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+g
+o4
+i7
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yro12
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o12
+_1
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ysspark.ui.showConsoleProgress
+2023-12-08 21:44:50 [DEBUG] Command to send: c
+o12
+_2
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ystrue
+2023-12-08 21:44:50 [DEBUG] Command to send: a
+e
+o4
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !yi8
+2023-12-08 21:44:50 [DEBUG] Command to send: r
+u
+JavaSparkContext
+rj
+e
+
+2023-12-08 21:44:50 [DEBUG] Answer received: !ycorg.apache.spark.api.java.JavaSparkContext
+2023-12-08 21:44:50 [DEBUG] Command to send: i
+org.apache.spark.api.java.JavaSparkContext
+ro0
+e
+
+2023-12-08 21:44:51 [DEBUG] Command to send: A
+b62c18ee4dd179140a6224d9b2c600bded61e8a0591a6186f3d4c16159d3df16
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Command to send: m
+d
+o1
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Command to send: m
+d
+o2
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Command to send: m
+d
+o3
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Command to send: m
+d
+o4
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro13
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o13
+sc
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro14
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o14
+conf
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro15
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+PythonAccumulatorV2
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonAccumulatorV2
+2023-12-08 21:44:51 [DEBUG] Command to send: i
+org.apache.spark.api.python.PythonAccumulatorV2
+s127.0.0.1
+i59333
+sb62c18ee4dd179140a6224d9b2c600bded61e8a0591a6186f3d4c16159d3df16
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro16
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o13
+sc
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro17
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o17
+register
+ro16
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yv
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+isEncryptionEnabled
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+isEncryptionEnabled
+ro13
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ybfalse
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+getPythonAuthSocketTimeout
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+getPythonAuthSocketTimeout
+ro13
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yL15
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+getSparkBufferSize
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+getSparkBufferSize
+ro13
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yi65536
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark.SparkFiles
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.SparkFiles
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.SparkFiles
+getRootDirectory
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.SparkFiles
+getRootDirectory
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ys/tmp/spark-7849b470-b8f3-40e2-b92a-17740346a864/userFiles-ff008996-1a0f-447a-8abb-147417036270
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o15
+get
+sspark.submit.pyFiles
+s
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ys
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark.util
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark.util.Utils
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.util.Utils
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.util.Utils
+getLocalDir
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o13
+sc
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro18
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o18
+conf
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro19
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.util.Utils
+getLocalDir
+ro19
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ys/tmp/spark-7849b470-b8f3-40e2-b92a-17740346a864
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark.util
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yp
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+org.apache.spark.util.Utils
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.util.Utils
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.util.Utils
+createTempDir
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.util.Utils
+createTempDir
+s/tmp/spark-7849b470-b8f3-40e2-b92a-17740346a864
+spyspark
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro20
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o20
+getAbsolutePath
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ys/tmp/spark-7849b470-b8f3-40e2-b92a-17740346a864/pyspark-ac56e91a-de5b-49c5-a630-0081a208c44d
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o15
+get
+sspark.python.profile
+sfalse
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ysfalse
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o15
+get
+sspark.python.profile.memory
+sfalse
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ysfalse
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession
+getDefaultSession
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ym
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+z:org.apache.spark.sql.SparkSession
+getDefaultSession
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro21
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o21
+isDefined
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ybfalse
+2023-12-08 21:44:51 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o13
+sc
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yro22
+2023-12-08 21:44:51 [DEBUG] Command to send: i
+java.util.HashMap
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yao23
+2023-12-08 21:44:51 [DEBUG] Command to send: c
+o23
+put
+sspark.app.name
+sCarOriginExtraction
+e
+
+2023-12-08 21:44:51 [DEBUG] Answer received: !yn
+2023-12-08 21:44:51 [DEBUG] Command to send: i
+org.apache.spark.sql.SparkSession
+ro22
+ro23
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yro24
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession
+setDefaultSession
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ym
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+z:org.apache.spark.sql.SparkSession
+setDefaultSession
+ro24
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yv
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession
+setActiveSession
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ym
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+z:org.apache.spark.sql.SparkSession
+setActiveSession
+ro24
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yv
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+o24
+read
+e
+
+2023-12-08 21:44:52 [DEBUG] Command to send: m
+d
+o23
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yv
+2023-12-08 21:44:52 [DEBUG] Answer received: !yro25
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+o25
+option
+sheader
+strue
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yro26
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:52 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ym
+2023-12-08 21:44:52 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ylo27
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+o27
+add
+staskfiles/cars.csv
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro27
+e
+
+2023-12-08 21:44:52 [DEBUG] Answer received: !yro28
+2023-12-08 21:44:52 [DEBUG] Command to send: c
+o26
+csv
+ro28
+e
+
+2023-12-08 21:44:53 [DEBUG] Command to send: m
+d
+o27
+e
+
+2023-12-08 21:44:53 [DEBUG] Answer received: !yv
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro29
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o24
+read
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro30
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o30
+option
+sheader
+strue
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro31
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ylo32
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o32
+add
+staskfiles/Sheet1.csv
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro32
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro33
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o31
+csv
+ro33
+e
+
+2023-12-08 21:44:56 [DEBUG] Command to send: m
+d
+o32
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yv
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro34
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o24
+read
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro35
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o35
+option
+sheader
+strue
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro36
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ylo37
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o37
+add
+staskfiles/2015_State_Top10Report_wTotalThefts.csv
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro37
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro38
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o36
+csv
+ro38
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro39
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o39
+schema
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro40
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o40
+json
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ys{"type":"struct","fields":[{"name":"State","type":"string","nullable":true,"metadata":{}},{"name":"Rank","type":"string","nullable":true,"metadata":{}},{"name":"Make_Model","type":"string","nullable":true,"metadata":{}},{"name":"Model_Year","type":"string","nullable":true,"metadata":{}},{"name":"Thefts","type":"string","nullable":true,"metadata":{}}]}
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sState
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro41
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro42
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sModel_Year
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro43
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ylo44
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o44
+add
+ro41
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o44
+add
+ro42
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o44
+add
+ro43
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro44
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro45
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+concat_ws
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+concat_ws
+s_
+ro45
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro46
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o39
+withColumn
+scomposite_key
+ro46
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro47
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o34
+withColumn
+scomposite_key
+ro46
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro48
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o48
+schema
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro49
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o49
+json
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ys{"type":"struct","fields":[{"name":"State","type":"string","nullable":true,"metadata":{}},{"name":"Rank","type":"string","nullable":true,"metadata":{}},{"name":"Make_Model","type":"string","nullable":true,"metadata":{}},{"name":"Model_Year","type":"string","nullable":true,"metadata":{}},{"name":"Thefts","type":"string","nullable":true,"metadata":{}},{"name":"composite_key","type":"string","nullable":false,"metadata":{}}]}
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o48
+withColumnRenamed
+sState
+sState_updated
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro50
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o50
+withColumnRenamed
+sRank
+sRank_updated
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro51
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o51
+withColumnRenamed
+sMake_Model
+sMake_Model_updated
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro52
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o52
+withColumnRenamed
+sModel_Year
+sModel_Year_updated
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro53
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o53
+withColumnRenamed
+sThefts
+sThefts_updated
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro54
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:56 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ym
+2023-12-08 21:44:56 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ylo55
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o55
+add
+scomposite_key
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro55
+e
+
+2023-12-08 21:44:56 [DEBUG] Answer received: !yro56
+2023-12-08 21:44:56 [DEBUG] Command to send: c
+o47
+join
+ro54
+ro56
+sfull_outer
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro57
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o47
+schema
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro58
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o58
+json
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ys{"type":"struct","fields":[{"name":"State","type":"string","nullable":true,"metadata":{}},{"name":"Rank","type":"string","nullable":true,"metadata":{}},{"name":"Make_Model","type":"string","nullable":true,"metadata":{}},{"name":"Model_Year","type":"string","nullable":true,"metadata":{}},{"name":"Thefts","type":"string","nullable":true,"metadata":{}},{"name":"composite_key","type":"string","nullable":false,"metadata":{}}]}
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sState_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro59
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sState
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro60
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo61
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o61
+add
+ro59
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o61
+add
+ro60
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro61
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro62
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+coalesce
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+coalesce
+ro62
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro63
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o57
+withColumn
+sState
+ro63
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro64
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sRank_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro65
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sRank
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro66
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo67
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o67
+add
+ro65
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o67
+add
+ro66
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro67
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro68
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+coalesce
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+coalesce
+ro68
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro69
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o64
+withColumn
+sRank
+ro69
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro70
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro71
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro72
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo73
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o73
+add
+ro71
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o73
+add
+ro72
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro73
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro74
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+coalesce
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+coalesce
+ro74
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro75
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o70
+withColumn
+sMake_Model
+ro75
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro76
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sModel_Year_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro77
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sModel_Year
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro78
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo79
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o79
+add
+ro77
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o79
+add
+ro78
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro79
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro80
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+coalesce
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+coalesce
+ro80
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro81
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o76
+withColumn
+sModel_Year
+ro81
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro82
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sThefts_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro83
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sThefts
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro84
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo85
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o85
+add
+ro83
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o85
+add
+ro84
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro85
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro86
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+coalesce
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+coalesce
+ro86
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro87
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o82
+withColumn
+sThefts
+ro87
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro88
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o54
+schema
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro89
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o89
+json
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ys{"type":"struct","fields":[{"name":"State_updated","type":"string","nullable":true,"metadata":{}},{"name":"Rank_updated","type":"string","nullable":true,"metadata":{}},{"name":"Make_Model_updated","type":"string","nullable":true,"metadata":{}},{"name":"Model_Year_updated","type":"string","nullable":true,"metadata":{}},{"name":"Thefts_updated","type":"string","nullable":true,"metadata":{}},{"name":"composite_key","type":"string","nullable":false,"metadata":{}}]}
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo90
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o90
+add
+sState_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro90
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro91
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o88
+drop
+ro91
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro92
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo93
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o93
+add
+sRank_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro93
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro94
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o92
+drop
+ro94
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro95
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo96
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o96
+add
+sMake_Model_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro96
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro97
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o95
+drop
+ro97
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro98
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo99
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o99
+add
+sModel_Year_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro99
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro100
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o98
+drop
+ro100
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro101
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo102
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o102
+add
+sThefts_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro102
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro103
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o101
+drop
+ro103
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro104
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ylo105
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o105
+add
+scomposite_key
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro105
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro106
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o104
+drop
+ro106
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro107
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:57 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !ym
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sThefts
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro108
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o108
+cast
+sint
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro109
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o107
+withColumn
+sThefts
+ro109
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro110
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o110
+write
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro111
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o111
+option
+sheader
+strue
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro112
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o112
+mode
+soverwrite
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yro113
+2023-12-08 21:44:57 [DEBUG] Command to send: c
+o113
+csv
+staskfiles/output_updated
+e
+
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o37
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o0
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o5
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o6
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o7
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o8
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o9
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o10
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o11
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o12
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o14
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o17
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o18
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o19
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o20
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o21
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o22
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o25
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o26
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o28
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o30
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o31
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o33
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o35
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o36
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o38
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o40
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o44
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o55
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o61
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o67
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o73
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o79
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o85
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o90
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o93
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o96
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o99
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o102
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:57 [DEBUG] Command to send: m
+d
+o105
+e
+
+2023-12-08 21:44:57 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro114
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ylo115
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o115
+add
+ro114
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro115
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro116
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o110
+select
+ro116
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro117
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o117
+distinct
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro118
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro119
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+split
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+split
+ro119
+s 
+i-1
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro120
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o120
+apply
+i0
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro121
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+lit
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+lit
+shttp://127.0.0.1:8080/cars/getbyBrand
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro122
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession
+getActiveSession
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.SparkSession
+getActiveSession
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro123
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o123
+isDefined
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+SparkSession
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession
+getActiveSession
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.sql.SparkSession
+getActiveSession
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro124
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o124
+get
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro125
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+SparkSession$
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.SparkSession$
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.SparkSession$
+MODULE$
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro126
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.HashMap
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yao127
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o126
+applyModifiableSettings
+ro125
+ro127
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+getBroadcastThreshold
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+getBroadcastThreshold
+ro13
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yL1048576
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+SimplePythonFunction
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.api.python.SimplePythonFunction
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.HashMap
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yao128
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o128
+put
+sPYTHONHASHSEED
+s0
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yn
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ylo129
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ylo130
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+org.apache.spark.api.python.SimplePythonFunction
+jgAWVswQAAAAAAACMH3B5c3BhcmsuY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGWUjA5fbWFrZV9mdW5jdGlvbpSTlChoAIwNX2J1aWx0aW5fdHlwZZSTlIwIQ29kZVR5cGWUhZRSlChLAksASwBLB0sFSwND/JcACQB0AQAAAAAAAAAAAABqAQAAAAAAAAAAfAFkAXwAmwCdAnoAAACmAQAAqwEAAAAAAAAAAH0CfAKgAgAAAAAAAAAAAAAAAAAAAAAAAAAApgAAAKsAAAAAAAAAAAB9A3wDch98A2QCGQAAAAAAAAAAAH0EfASgAQAAAAAAAAAAAAAAAAAAAAAAAAAAZANkBKYCAACrAgAAAAAAAAAAfQVuAmQEfQV8BVMAIwB0BgAAAAAAAAAAAAAkAHIcfQZkBXQJAAAAAAAAAAAAAHwGpgEAAKsBAAAAAAAAAACbAJ0CYwJZAGQAfQZ+BlMAZAB9Bn4GdwF3AHgDWQB3AZQoTowBL5RLAIwPY291bnRyeU9mT3JpZ2lulIwHVW5rbm93bpSMB0Vycm9yOiCUdJQojAhyZXF1ZXN0c5SMA2dldJSMBGpzb26UjAlFeGNlcHRpb26UjANzdHKUdJQojAljYXJfYnJhbmSUjAdhcGlfdXJslIwIcmVzcG9uc2WUjBJqc29uX3Jlc3BvbnNlX2xpc3SUjA1qc29uX3Jlc3BvbnNllIwRY291bnRyeV9vZl9vcmlnaW6UjAFllHSUjDUvaG9tZS9xb3NzYXkvUHljaGFybVByb2plY3RzL2hhcnJpX3NwYXJrX3Rhc2svVGFzay5weZSMFGNhbGxfYXBpX2Zvcl9jb3VudHJ5lGgdSxdDqYAA8AQMBSLdExuUPKAHqC+oaagvqC/RIDnREzrUEzqICNgdJZ9dml2ZX5xf0Aga4Asd8AAECSrYHC6ocdQcMYhN2CAt1yAx0iAx0DJDwFnRIE/UIE/QDB3QDB3gICnQDB3gDyDQCCD43QsU8AABBSLwAAEFIvAAAQUi2A8hnROYUZkWnBbQDyHQDyHQCCHQCCHQCCHQCCHQCCHQCCH4+Pj48AMBBSL4+PiUQx6CQRJBFQDBFQpBOwPBHxFBNgPBMAFBOwPBNgVBOwOUKSl0lFKUfZQojAtfX3BhY2thZ2VfX5ROjAhfX25hbWVfX5SMCF9fbWFpbl9flIwIX19maWxlX1+UaBx1Tk5OdJRSlIwkcHlzcGFyay5jbG91ZHBpY2tsZS5jbG91ZHBpY2tsZV9mYXN0lIwSX2Z1bmN0aW9uX3NldHN0YXRllJOUaCh9lH2UKGgkaB2MDF9fcXVhbG5hbWVfX5RoHYwPX19hbm5vdGF0aW9uc19flH2UjA5fX2t3ZGVmYXVsdHNfX5ROjAxfX2RlZmF1bHRzX1+UTowKX19tb2R1bGVfX5RoJYwHX19kb2NfX5ROjAtfX2Nsb3N1cmVfX5ROjBdfY2xvdWRwaWNrbGVfc3VibW9kdWxlc5RdlIwLX19nbG9iYWxzX1+UfZRoDmgAjAlzdWJpbXBvcnSUk5RoDoWUUpRzdYaUhlIwjBFweXNwYXJrLnNxbC50eXBlc5SMClN0cmluZ1R5cGWUk5QpgZSGlC4=
+ro128
+ro129
+spython3
+s3.11
+ro130
+ro16
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro131
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o24
+parseDataType
+s"string"
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro132
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache.spark.sql
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache.spark.sql.execution
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache.spark.sql.execution.python
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yp
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+org.apache.spark.sql.execution.python.UserDefinedPythonFunction
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.sql.execution.python.UserDefinedPythonFunction
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+org.apache.spark.sql.execution.python.UserDefinedPythonFunction
+scall_api_for_country
+ro131
+ro132
+i100
+bTrue
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro133
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:44:58 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ym
+2023-12-08 21:44:58 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ylo134
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o134
+add
+ro121
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o134
+add
+ro122
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro134
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro135
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o133
+apply
+ro135
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro136
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o118
+withColumn
+sCountry_of_Origin
+ro136
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro137
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o137
+cache
+e
+
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o115
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o127
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o128
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o129
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o130
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Command to send: m
+d
+o134
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yv
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro138
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o137
+write
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro139
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o139
+option
+sheader
+strue
+e
+
+2023-12-08 21:44:58 [DEBUG] Answer received: !yro140
+2023-12-08 21:44:58 [DEBUG] Command to send: c
+o140
+csv
+staskfiles/output_API/result
+e
+
+2023-12-08 21:44:59 [DEBUG] Command to send: m
+d
+o138
+e
+
+2023-12-08 21:44:59 [DEBUG] Answer received: !yv
+2023-12-08 21:45:00 [DEBUG] Answer received: !yv
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ym
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro141
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ym
+2023-12-08 21:45:00 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ylo142
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o142
+add
+ro141
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro142
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro143
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o137
+repartition
+ro143
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro144
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ym
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro145
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ym
+2023-12-08 21:45:00 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ylo146
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o146
+add
+ro145
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro146
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro147
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o144
+select
+ro147
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro148
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o148
+distinct
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yro149
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o13
+setCallSite
+scollect at /home/qossay/PycharmProjects/harri_spark_task/Task.py:56
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yv
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o149
+collectToPython
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yto150
+2023-12-08 21:45:00 [DEBUG] Command to send: c
+o13
+setCallSite
+n
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yv
+2023-12-08 21:45:00 [DEBUG] Command to send: a
+e
+o150
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yi3
+2023-12-08 21:45:00 [DEBUG] Command to send: a
+g
+o150
+i0
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yi39201
+2023-12-08 21:45:00 [DEBUG] Command to send: a
+e
+o150
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !yi3
+2023-12-08 21:45:00 [DEBUG] Command to send: a
+g
+o150
+i1
+e
+
+2023-12-08 21:45:00 [DEBUG] Answer received: !ys5dd9bea81f15c944771590bc296b90a4085b0b3155a99641f7febb82da30dd54
+2023-12-08 21:45:00 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro151
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o151
+equalTo
+sUnknown
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro152
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o144
+filter
+ro152
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro153
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ylo154
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o154
+add
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro154
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro155
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o153
+drop
+ro155
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro156
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o156
+write
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro157
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o157
+mode
+soverwrite
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro158
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o158
+csv
+staskfiles/output_API/country_Unknown.csv
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro159
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o159
+equalTo
+sSouth Korea
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro160
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o144
+filter
+ro160
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro161
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ylo162
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o162
+add
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro162
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro163
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o161
+drop
+ro163
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro164
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o164
+write
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro165
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o165
+mode
+soverwrite
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro166
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o166
+csv
+staskfiles/output_API/country_South Korea.csv
+e
+
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o142
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o45
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o46
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o47
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o48
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o49
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o50
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o51
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o52
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o53
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o54
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o56
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o57
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o58
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o59
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o60
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o62
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o63
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o64
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o65
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o66
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o68
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o69
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o70
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o71
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o72
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o74
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o75
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o76
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o77
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o78
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o80
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o81
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o82
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o83
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o84
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o86
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o87
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o88
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o89
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o91
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o92
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o94
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o95
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o97
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o98
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o100
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o101
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o103
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o104
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o106
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o107
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o108
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o109
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o111
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o112
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o113
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o114
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o116
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o117
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o119
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o120
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o121
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o122
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o123
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o124
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o126
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o131
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o132
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o135
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o136
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o139
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o140
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o141
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o143
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o146
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o150
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o154
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: m
+d
+o162
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro167
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o167
+equalTo
+sJapan
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro168
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o144
+filter
+ro168
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro169
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ylo170
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o170
+add
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro170
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro171
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o169
+drop
+ro171
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro172
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o172
+write
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro173
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o173
+mode
+soverwrite
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro174
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o174
+csv
+staskfiles/output_API/country_Japan.csv
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yv
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro175
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o175
+equalTo
+sAmerica
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro176
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o144
+filter
+ro176
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro177
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:01 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ym
+2023-12-08 21:45:01 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ylo178
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o178
+add
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro178
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro179
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o177
+drop
+ro179
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro180
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o180
+write
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro181
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o181
+mode
+soverwrite
+e
+
+2023-12-08 21:45:01 [DEBUG] Answer received: !yro182
+2023-12-08 21:45:01 [DEBUG] Command to send: c
+o182
+csv
+staskfiles/output_API/country_America.csv
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro183
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo184
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o184
+add
+ro183
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro184
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro185
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o110
+groupBy
+ro185
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro186
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo187
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o187
+add
+sThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro187
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro188
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o186
+sum
+ro188
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro189
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o189
+withColumnRenamed
+ssum(Thefts)
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro190
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+desc
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+desc
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro191
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo192
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o192
+add
+ro191
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro192
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro193
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o190
+sort
+ro193
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro194
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o194
+limit
+i5
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro195
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sState
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro196
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo197
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o197
+add
+ro196
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro197
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro198
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o110
+groupBy
+ro198
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro199
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo200
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o200
+add
+sThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro200
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro201
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o199
+sum
+ro201
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro202
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o202
+withColumnRenamed
+ssum(Thefts)
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro203
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+desc
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+desc
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro204
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo205
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o205
+add
+ro204
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro205
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro206
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o203
+sort
+ro206
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro207
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o207
+limit
+i5
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro208
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo209
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o209
+add
+sMake_Model
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro209
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro210
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o110
+join
+ro137
+ro210
+sinner
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro211
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o211
+apply
+sThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro212
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o212
+cast
+sint
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro213
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o211
+withColumn
+sThefts
+ro213
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro214
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro215
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo216
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o216
+add
+ro215
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro216
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro217
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o214
+groupBy
+ro217
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro218
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro219
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+sum
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+sum
+ro219
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro220
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o220
+as
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro221
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+s*
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro222
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+count
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+count
+ro222
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro223
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o223
+as
+scar_models_count_with_out_distinct
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro224
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo225
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o225
+add
+ro224
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro225
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro226
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o218
+agg
+ro221
+ro226
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro227
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+desc
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+desc
+sTotalThefts
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro228
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo229
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o229
+add
+ro228
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro229
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro230
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o227
+sort
+ro230
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro231
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo232
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o232
+add
+sMake_Model
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro232
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro233
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o110
+join
+ro137
+ro233
+sinner
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro234
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sCountry_of_Origin
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro235
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo236
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o236
+add
+ro235
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro236
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro237
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o234
+groupBy
+ro237
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro238
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMake_Model
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro239
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo240
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro240
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro241
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+count_distinct
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+count_distinct
+ro239
+ro241
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro242
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o242
+as
+sDistinct_Make_Models
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro243
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo244
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro244
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro245
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o238
+agg
+ro243
+ro245
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro246
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+functions
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.sql.functions
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.sql.functions
+desc
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.sql.functions
+desc
+sDistinct_Make_Models
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro247
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-12-08 21:45:02 [DEBUG] Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ym
+2023-12-08 21:45:02 [DEBUG] Command to send: i
+java.util.ArrayList
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ylo248
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o248
+add
+ro247
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !ybtrue
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro248
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro249
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o246
+sort
+ro249
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yro250
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o195
+showString
+i20
+i20
+bFalse
+e
+
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o170
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o178
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o184
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o187
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o192
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o197
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o200
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o205
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o209
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o216
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o225
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o229
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o232
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o236
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o240
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o244
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Command to send: m
+d
+o248
+e
+
+2023-12-08 21:45:02 [DEBUG] Answer received: !yv
+2023-12-08 21:45:02 [DEBUG] Answer received: !ys+--------------------+-----------+\n|          Make_Model|TotalThefts|\n+--------------------+-----------+\n|        Honda Accord|      51371|\n|         Honda Civic|      47341|\n|Ford Pickup (Full...|      29094|\n|Chevrolet Pickup ...|      27528|\n|        Toyota Camry|      14791|\n+--------------------+-----------+\n
+2023-12-08 21:45:02 [DEBUG] Command to send: c
+o208
+showString
+i20
+i20
+bFalse
+e
+
+2023-12-08 21:45:03 [DEBUG] Answer received: !ys+----------+-----------+\n|     State|TotalThefts|\n+----------+-----------+\n|California|      86768|\n|     Texas|      25433|\n|Washington|      11008|\n|   Florida|       9664|\n|   Georgia|       6497|\n+----------+-----------+\n
+2023-12-08 21:45:03 [DEBUG] Command to send: c
+o231
+limit
+i1
+e
+
+2023-12-08 21:45:03 [DEBUG] Answer received: !yro251
+2023-12-08 21:45:03 [DEBUG] Command to send: c
+o251
+showString
+i20
+i20
+bFalse
+e
+
+2023-12-08 21:45:04 [DEBUG] Answer received: !ys+-----------------+-----------+----------------------------------+\n|Country_of_Origin|TotalThefts|car_models_count_with_out_distinct|\n+-----------------+-----------+----------------------------------+\n|            Japan|     142827|                               205|\n+-----------------+-----------+----------------------------------+\n
+2023-12-08 21:45:04 [DEBUG] Command to send: c
+o250
+limit
+i1
+e
+
+2023-12-08 21:45:04 [DEBUG] Answer received: !yro252
+2023-12-08 21:45:04 [DEBUG] Command to send: c
+o252
+showString
+i20
+i20
+bFalse
+e
+
+2023-12-08 21:45:04 [DEBUG] Answer received: !ys+-----------------+--------------------+\n|Country_of_Origin|Distinct_Make_Models|\n+-----------------+--------------------+\n|          America|                  26|\n+-----------------+--------------------+\n
+2023-12-08 21:45:04 [DEBUG] Command to send: c
+o195
+write
+e
+
+2023-12-08 21:45:04 [DEBUG] Answer received: !yro253
+2023-12-08 21:45:04 [DEBUG] Command to send: c
+o253
+mode
+soverwrite
+e
+
+2023-12-08 21:45:04 [DEBUG] Answer received: !yro254
+2023-12-08 21:45:04 [DEBUG] Command to send: c
+o254
+csv
+staskfiles/output_sql_result/top_stolen_models
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yv
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o208
+write
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yro255
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o255
+mode
+soverwrite
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yro256
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o256
+csv
+staskfiles/output_sql_result/top_stolen_states
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yv
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o231
+write
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yro257
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o257
+mode
+soverwrite
+e
+
+2023-12-08 21:45:05 [DEBUG] Answer received: !yro258
+2023-12-08 21:45:05 [DEBUG] Command to send: c
+o258
+csv
+staskfiles/output_sql_result/sorted_country_counts1
+e
+
+2023-12-08 21:45:06 [DEBUG] Answer received: !yv
+2023-12-08 21:45:06 [DEBUG] Command to send: c
+o231
+write
+e
+
+2023-12-08 21:45:06 [DEBUG] Answer received: !yro259
+2023-12-08 21:45:06 [DEBUG] Command to send: c
+o259
+mode
+soverwrite
+e
+
+2023-12-08 21:45:06 [DEBUG] Answer received: !yro260
+2023-12-08 21:45:06 [DEBUG] Command to send: c
+o260
+csv
+staskfiles/output_sql_result/sorted_country_counts2
+e
+
+2023-12-08 21:45:06 [DEBUG] Answer received: !yv
+2023-12-08 21:45:06 [INFO] Closing down client-server connection
+2023-12-08 21:45:06 [INFO] end the main execution block...

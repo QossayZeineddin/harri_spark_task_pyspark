@@ -2,7 +2,7 @@ import os
 import shutil
 import requests
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, udf, lit, split, concat_ws,coalesce,desc
+from pyspark.sql.functions import col, udf, lit, split, concat_ws, coalesce, desc, count, sum, countDistinct
 from pyspark.sql.types import StringType
 import logging
 
@@ -51,7 +51,7 @@ def extract_car_model_and_origin(api_url, df_sheet, output_base_path):
     )
     car_models_with_origin.cache()
     newDataSet = car_models_with_origin
-
+    newDataSet.write.option("header","true").csv(output_base_path+"/result")
     car_models_with_origin = car_models_with_origin.repartition('Country_of_Origin')
     countries = [row.Country_of_Origin for row in car_models_with_origin.select('Country_of_Origin').distinct().collect()]
 
@@ -126,12 +126,46 @@ def spark_sql_query(df_report, df_carModel_Country, output_path):
         .limit(5)
     )
 
+    # Based on the models, what is the most country from where Americans buy their cars?
+    # based on data that we have there are two Solution first take the total theft of each
+    # country cars and the second just count car models and its country that the american have
+
+    ## first one
+    # join the DataFrames on 'Make_Model'
+    joined_df = (
+        df_report
+        .join(df_carModel_Country, 'Make_Model')
+    )
+    # Cast 'Thefts' column to integer
+    joined_df = joined_df.withColumn("Thefts", joined_df["Thefts"].cast("int"))
+
+    # group by 'Country_of_Origin' and sum of thefts
+    country_counts = (
+        joined_df
+        .groupBy('Country_of_Origin')
+        .agg(sum('Thefts').alias('TotalThefts'), count('*').alias('car_models_count_with_out_distinct'))
+    )
+
+    # sort the results in descending order of TotalThefts and limit to 1
+    sorted_country_counts1 = (
+        country_counts
+        .orderBy(desc('TotalThefts'))
+
+    )
+
+    ## secand
     # join the DataFrames on 'Make_Model'
     joined_df = df_report.join(df_carModel_Country, 'Make_Model')
-    # group by 'Country_of_Origin' and count occurrences
-    country_counts = joined_df.groupBy('Country_of_Origin').count()
-    # sort the results in descending order of count
-    sorted_country_counts = country_counts.orderBy(desc('count')).limit(1)
+
+    # group by 'Country_of_Origin' and count distinct occurrences of 'Make_Model'
+    country_counts = joined_df.groupBy('Country_of_Origin').agg(
+        countDistinct('Make_Model').alias('Distinct_Make_Models'))
+
+    # sort the results in descending order of distinct count and limit to 1
+    sorted_country_counts2 = country_counts.orderBy(desc('Distinct_Make_Models'))
+
+    #country_counts = joined_df.groupBy('Country_of_Origin').count()
+    #sorted_country_counts = country_counts.orderBy(desc('count')).limit(1)
 
     # Show the results
     print("Top 5 stolen car models:")
@@ -140,12 +174,18 @@ def spark_sql_query(df_report, df_carModel_Country, output_path):
     print("\nTop 5 states with the most stolen cars:")
     top_stolen_states.show()
 
-    print("\nMost common country of origin for car models purchased by Americans:")
-    sorted_country_counts.show()
+    print("\nMost common country of origin for car models purchased by Americans based on total theft :")
+    sorted_country_counts1.limit(1).show()
+
+    print("\nMost common country of origin for car models purchased by Americans based on car models :")
+    sorted_country_counts2.limit(1).show()
+
+
     # Write results to CSV files
     top_stolen_models.write.mode("overwrite").csv(f"{output_path}/top_stolen_models")
     top_stolen_states.write.mode("overwrite").csv(f"{output_path}/top_stolen_states")
-    sorted_country_counts.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts")
+    sorted_country_counts1.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts1")
+    sorted_country_counts1.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts2")
 
 
 # Main Execution Block
