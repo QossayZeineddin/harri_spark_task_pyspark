@@ -176,8 +176,6 @@ if __name__ == '__main__':
     create_or_clear_directory(output_base_path2)
     create_or_clear_directory(output_base_path4)
 
-
-
     spark_session = start_spark_session()
     dfs = read_data_set_by_spark(spark_session, file_paths)
     df_spark_car, df_spark_sheet, df_sparkTotalThefts = dfs
