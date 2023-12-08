@@ -143,9 +143,11 @@ Build a Spark application to extract results from the provided datasets.
         Top 5 States with the Most Stolen Cars:
             Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
     
-        Most Common Country of Origin:
+        Based on the models, what is the most country from where Americans buy their cars?:
+            based on the data that we have there are two Solution first take the total theft of each
+             country cars and the second just count car models and its country that the american have
             Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
-            Group the resulting DataFrame by 'Country_of_Origin' and count the occurrences of each country.
+            Group the resulting DataFrame by 'Country_of_Origin' and count the total theft cars of each country secand solution count total models of each country .
             Sort the results in descending order based on the count.
     
         Display Results:
@@ -172,7 +174,8 @@ spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20A
 PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
 
 #######################################################   
-the run of task.py console logs
+the run of task.py console logs  
 
-![Screenshot from 2023-12-08 18-19-09](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/31f4b19c-c540-4093-affa-882d9283f472)
+![Screenshot from 2023-12-08 21-45-50](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/a5a904c6-8ac8-44c7-95b2-42c914276bda)
+
 
