@@ -129,7 +129,7 @@ Build a Spark application to extract results from the provided datasets.
     The update_dataset method ensures a comprehensive and efficient update of records in the dataset, utilizing Spark DataFrame operations for optimal performance.
     
 
-3. **Analysis Using SQL**
+3. **Analysis Using SQL**   
      For the analysis step, a method named spark_sql_query has been developed to leverage Spark SQL for querying and extracting meaningful insights from the datasets. The method          performs the following analyses:
    - List the top 5 stolen car models in the U.S. 
    - List the top 5 states based on the number of stolen cars.
