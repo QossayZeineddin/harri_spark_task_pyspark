@@ -79,7 +79,7 @@ Build a Spark application to extract results from the provided datasets.
         df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
      ```
 
-    The code utilizes functions such as start_spark_session to initialize the Spark session and read_data_set_by_spark to read the dataset files (CSV format) into Spark DataFrames.     The main extraction is performed by the extract_car_model_and_origin function, which uses the Spark DataFrame API to select distinct car models and determine their respective         countries of origin through API calls. The results are stored in separate files for each country within the specified output path.
+        The code utilizes functions such as start_spark_session to initialize the Spark session and read_data_set_by_spark to read the dataset files (CSV format) into Spark                 DataFrames.     The main extraction is performed by the extract_car_model_and_origin function, which uses the Spark DataFrame API to select distinct car models and determine         their respective         countries of origin through API calls. The results are stored in separate files for each country within the specified output path.
 
    - Optimize performance using proper caching.
        Implement caching mechanisms, both at the Spark RDD and DataFrame levels, to store intermediate results that can be reused across multiple operations. This can significantly         reduce the need to recalculate certain values.
@@ -129,27 +129,29 @@ Build a Spark application to extract results from the provided datasets.
     The update_dataset method ensures a comprehensive and efficient update of records in the dataset, utilizing Spark DataFrame operations for optimal performance.
     
 
-3. **Analysis Using SQL**
+3. **Analysis Using SQL**   
      For the analysis step, a method named spark_sql_query has been developed to leverage Spark SQL for querying and extracting meaningful insights from the datasets. The method          performs the following analyses:
    - List the top 5 stolen car models in the U.S. 
    - List the top 5 states based on the number of stolen cars.
    - Determine the most common country of origin for car models purchased by Americans, using SQL syntax.
   
-   Method Explanation:
-
-    Top 5 Stolen Car Models:
-        Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to             the top 5 results.
-
-    Top 5 States with the Most Stolen Cars:
-        Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
-
-    Most Common Country of Origin:
-        Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
-        Group the resulting DataFrame by 'Country_of_Origin' and count the occurrences of each country.
-        Sort the results in descending order based on the count.
-
-    Display Results:
-        Display the results for each analysis using the show() method.
+       Method Explanation:
+    
+        Top 5 Stolen Car Models:
+            Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to             the top 5 results.
+    
+        Top 5 States with the Most Stolen Cars:
+            Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
+    
+        Based on the models, what is the most country from where Americans buy their cars?:
+            based on the data that we have there are two Solution first take the total theft of each
+             country cars and the second just count car models and its country that the american have
+            Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
+            Group the resulting DataFrame by 'Country_of_Origin' and count the total theft cars of each country secand solution count total models of each country .
+            Sort the results in descending order based on the count.
+    
+        Display Results:
+            Display the results for each analysis using the show() method.
 
 ## Usage
 
@@ -170,4 +172,10 @@ To execute the tasks, follow the instructions below:
 What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=281s  
 spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf  
 PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
+
+#######################################################   
+the run of task.py console logs  
+
+![Screenshot from 2023-12-08 21-45-50](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/a5a904c6-8ac8-44c7-95b2-42c914276bda)
+
 
