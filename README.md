@@ -18,7 +18,7 @@ when yoy run the server we have multy get requset to get the data
 3- To get a specific numbers of car models (using limit http://127.0.0.1:8080/cars/getby/Japan/2   this get the first 2 cars in japan)
 4- To get all cars (http://127.0.0.1:8080/cars/getAll)
 
-## Database Configuration
+#### Database Configuration
 
 This project utilizes MariaDB to create and manage the database. If you prefer a different SQL server, you can make the necessary adjustments by following these steps:
 
