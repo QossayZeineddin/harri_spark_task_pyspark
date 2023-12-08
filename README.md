@@ -14,7 +14,7 @@ Build a Spring Boot application to create an API for searching the country of or
 GitHub repo [Spring Boot application](https://github.com/QossayZeineddin/harri_api_task.git)  
 URL for the application : https://github.com/QossayZeineddin/harri_api_task.git  
 when yoy run the server we have multy get requset to get the data  
-1- Get the counter of origin for a car name  (for example http://127.0.0.1:8080/cars/getbyBrand/bmw)  
+1- Get the country of origin for a car name  (for example http://127.0.0.1:8080/cars/getbyBrand/bmw)  
 2- Get the car brands of country (for example http://127.0.0.1:8080/cars/getby/Japan)  
 3- To get a specific numbers of car models (using limit http://127.0.0.1:8080/cars/getby/Japan/2   this get the first 2 cars in japan)  
 4- To get all cars (http://127.0.0.1:8080/cars/getAll)  
