@@ -78,20 +78,69 @@ Build a Spark application to extract results from the provided datasets.
          car_models_with_origin.cache()
 
      ```
-         this step decreasing the run time of the appleaction around 15 sec
+     this step decreasing the run time of the appleaction around 15 sec
 
     - Data Partitioning
+      To enhance the efficiency of Spark transformations, a thoughtful data partitioning strategy has been implemented. The objective is to distribute the data evenly across nodes, preventing resource bottlenecks and ensuring a balanced workload, Then write in files for each country it's car models . The following step outline the data partitioning process:
+      ```
+          car_models_with_origin = car_models_with_origin.repartition('Country_of_Origin')
+        countries = [row.Country_of_Origin for row in car_models_with_origin.select('Country_of_Origin').distinct().collect()]
+    
+        def write_partition_to_file(country):
+            country_df = car_models_with_origin.filter(col('Country_of_Origin') == country)
+            file_path = f'{output_base_path}/country_{country}.csv'
+            country_df.drop('Country_of_Origin').write.mode('overwrite').csv(file_path)
+    
+        for country in countries:
+            write_partition_to_file(country)
 
-        Optimize data partitioning strategies, particularly during Spark transformations, to distribute data evenly across nodes. This ensures that the workload is balanced,                 preventing resource bottlenecks.
 
 2. **Update Records**
-   - Read a file with updated records and merge them with the original dataset. Consider the key for your dataset to be a combination of all columns except the rank column.
+   - To update records in the dataset, a comprehensive method named update_dataset has been implemented. This method seamlessly merges an original DataFrame with another DataFrame containing updated records.
+Method Explanation:
+
+    1- Define Key Columns:
+        Identify key columns for uniquely identifying records. In this case, exclude columns like 'Rank' and 'Thefts.'
+
+    2- Create Composite Key:
+        Generate a composite key using the identified key columns for both the original and updated DataFrames.
+
+    3- Rename Columns:
+        Rename columns in the updated DataFrame, excluding the composite key, to avoid conflicts during the join.
+
+    4- Full Outer Join:
+        Perform a full outer join on the composite key to merge the original and updated DataFrames.
+
+    5- Coalesce Columns:
+        Prioritize updated data where available; otherwise, use the original data for each column.
+
+    6- Drop Unnecessary Columns:
+        Remove the composite key and columns from the updated DataFrame, leaving only the updated records.
+
+The update_dataset method ensures a comprehensive and efficient update of records in the dataset, utilizing Spark DataFrame operations for optimal performance.
 
 
 3. **Analysis Using SQL**
+4. For the analysis step, a method named spark_sql_query has been developed to leverage Spark SQL for querying and extracting meaningful insights from the datasets. The method performs the following analyses:
    - List the top 5 stolen car models in the U.S. 
    - List the top 5 states based on the number of stolen cars.
    - Determine the most common country of origin for car models purchased by Americans, using SQL syntax.
+  
+   Method Explanation:
+
+    Top 5 Stolen Car Models:
+        Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the top 5 results.
+
+    Top 5 States with the Most Stolen Cars:
+        Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the top 5 results.
+
+    Most Common Country of Origin:
+        Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
+        Group the resulting DataFrame by 'Country_of_Origin' and count the occurrences of each country.
+        Sort the results in descending order based on the count.
+
+    Display Results:
+        Display the results for each analysis using the show() method.
 
 ## Usage
 
@@ -102,28 +151,14 @@ To execute the tasks, follow the instructions below:
    - Utilize the API for searching the country of origin for cars.
 
 2. **Spark Part**
-   - Execute the Spark application to perform data extraction and analysis.
+   - Execute the Spark application to perform data extraction and analysis. -Use Task.py to run the pyspark application-
 
-## Project Structure
-
-- `/api`: Contains the Spring Boot application for the API.
-- `/spark`: Contains the Spark application for data extraction and analysis.
-
-## Dependencies
-
-Ensure you have the following dependencies installed:
-
-- [Java](https://www.java.com/en/download/)
-- [Spring Boot](https://spring.io/projects/spring-boot)
-- [Apache Spark](https://spark.apache.org/)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+## resources
 
 
 
-What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=281s
-spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf
-PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s
+
+What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=281s  
+spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf  
+PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
 
