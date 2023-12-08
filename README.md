@@ -16,11 +16,13 @@ URL for the application : https://github.com/QossayZeineddin/harri_api_task.git
 when yoy run the server we have multy get requset to get the data  
 1- Get the country of origin for a car name  (for example http://127.0.0.1:8080/cars/getbyBrand/bmw)  
 
-![Screenshot from 2023-12-08 16-47-07](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/b64cebfd-0e03-4758-8351-dc17f072b7e5)
+<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/b64cebfd-0e03-4758-8351-dc17f072b7e5" width="400" height="300" alt="Screenshot from 2023-12-08 16-47-07">
+
 
 2- Get the car brands of country (for example http://127.0.0.1:8080/cars/getby/Japan)  
 
-![Screenshot from 2023-12-08 16-47-38](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/0cf33d0f-9d8c-4435-b095-d7ade0fce5a9)
+<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/0cf33d0f-9d8c-4435-b095-d7ade0fce5a9" width="400" height="300" alt="Screenshot from 2023-12-08 16-47-38">
+
 
 
 3- To get a specific numbers of car models (using limit http://127.0.0.1:8080/cars/getby/Japan/2   this get the first 2 cars in japan)  
