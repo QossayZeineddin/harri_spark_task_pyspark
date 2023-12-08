@@ -105,7 +105,7 @@ def create_or_clear_directory(directory_path):
         shutil.rmtree(directory_path)
     os.makedirs(directory_path)
 
-def spark_sql_query(df_report, df_carModel_Country):
+def spark_sql_query(df_report, df_carModel_Country, output_path):
     # Top 5 stolen car models
     top_stolen_models = (
         df_report
@@ -142,15 +142,17 @@ def spark_sql_query(df_report, df_carModel_Country):
 
     print("\nMost common country of origin for car models purchased by Americans:")
     sorted_country_counts.show()
-
+    # Write results to CSV files
+    top_stolen_models.write.mode("overwrite").csv(f"{output_path}/top_stolen_models")
+    top_stolen_states.write.mode("overwrite").csv(f"{output_path}/top_stolen_states")
+    sorted_country_counts.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts")
 
 
 # Main Execution Block
 if __name__ == '__main__':
 
-    output_base_path3 = "taskfiles/Logging/file.log"
-    if not os.path.exists("taskfiles/Logging"):
-        os.makedirs("taskfiles/Logging")
+    output_base_path3 = "taskfiles/Logging"
+    create_or_clear_directory(output_base_path3)
 
     # Configure logging
     logging.basicConfig(
@@ -158,7 +160,7 @@ if __name__ == '__main__':
         format="%(asctime)s [%(levelname)s] %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         handlers=[
-            logging.FileHandler(output_base_path3, mode="w")  # Log to a file
+            logging.FileHandler(output_base_path3+"/file.log", mode="w")  # Log to a file
         ]
     )
     logging.info("Starting the main execution block...")
@@ -168,8 +170,11 @@ if __name__ == '__main__':
     api_url = 'http://127.0.0.1:8080/cars/getbyBrand'
     output_base_path1 = 'taskfiles/output_API'  # where each car model with its country
     output_base_path2 = 'taskfiles/output_updated'  # the result of updated data from sheet1
+    output_base_path4 = 'taskfiles/output_sql_result'  # the result of updated data from sheet1
+
     create_or_clear_directory(output_base_path1)
     create_or_clear_directory(output_base_path2)
+    create_or_clear_directory(output_base_path4)
 
 
 
@@ -186,7 +191,7 @@ if __name__ == '__main__':
 
     df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
 
-    spark_sql_query(updated_dataset, df_carModel_Country)
+    spark_sql_query(updated_dataset, df_carModel_Country, output_base_path4)
 
     logging.info("Closing down client-server connection")
     logging.info("end the main execution block...")
