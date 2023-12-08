@@ -79,7 +79,7 @@ Build a Spark application to extract results from the provided datasets.
         df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
      ```
 
-    The code utilizes functions such as start_spark_session to initialize the Spark session and read_data_set_by_spark to read the dataset files (CSV format) into Spark DataFrames.     The main extraction is performed by the extract_car_model_and_origin function, which uses the Spark DataFrame API to select distinct car models and determine their respective         countries of origin through API calls. The results are stored in separate files for each country within the specified output path.
+        The code utilizes functions such as start_spark_session to initialize the Spark session and read_data_set_by_spark to read the dataset files (CSV format) into Spark                 DataFrames.     The main extraction is performed by the extract_car_model_and_origin function, which uses the Spark DataFrame API to select distinct car models and determine         their respective         countries of origin through API calls. The results are stored in separate files for each country within the specified output path.
 
    - Optimize performance using proper caching.
        Implement caching mechanisms, both at the Spark RDD and DataFrame levels, to store intermediate results that can be reused across multiple operations. This can significantly         reduce the need to recalculate certain values.
