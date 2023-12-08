@@ -166,12 +166,9 @@ To execute the tasks, follow the instructions below:
 
 ## resources
 
-
-
-
-What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=281s  
-spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf  
-PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
+   - What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=281s  
+   - spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf  
+   - PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
 
 #######################################################   
 the run of task.py console logs  
