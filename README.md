@@ -171,3 +171,8 @@ What is spark and how it work : https://www.youtube.com/watch?v=IyHrVZ2uJkM&t=28
 spark book : https://github.com/gigamailer/simplenin3/blob/master/Spark%20in%20Action-Manning%25282016%2529.pdf  
 PySpark Tutorial  : https://www.youtube.com/watch?v=_C8kWso4ne4&t=939s  
 
+#######################################################
+the run of task.py console logs
+
+![Screenshot from 2023-12-08 18-19-09](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/31f4b19c-c540-4093-affa-882d9283f472)
+
