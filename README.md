@@ -52,14 +52,26 @@ spring.datasource.url=jdbc:mariadb://localhost:3306/harri_task_API
 ## Spark Part
 
 Build a Spark application to extract results from the provided datasets.  
--at first i desad to use Sprak RDD but this step need alot of study and search so i swach to use spark DataFrame-  
+ - Initially, I considered using Spark RDDs for this Task (rdds code in main.py). However, due to the complexity , time limit and after conducting research, I opted to leverage the more streamlined and optimized approach provided by Spark DataFrames (in Task.py).-  
+
 
 1. **Read Dataset and Extract Car Model and Country of Origin**
-   - Read the dataset and extract a file containing the car model and its country of origin, utilizing the API built in the previous step.
-     -"Initially, I considered using Spark RDDs for this step. However, due to the complexity , time limit and after conducting research, I opted to leverage the more streamlined and optimized approach provided by Spark DataFrames.-
+   - Read the dataset and extract a files containing the car model and its country of origin, utilizing the API built in the previous step.
+     'In this step, the Spark application reads the provided datasets, extracting information about car models and their corresponding countries of origin. The process is optimized         using the Spark DataFrame API for efficient and distributed data processing.'
+      ```
+     # Initialize the Spark session
+        spark_session = start_spark_session()
+
+        # Read the dataset into Spark DataFrames
+        dfs = read_data_set_by_spark(spark_session, file_paths)
+        # Other code...
+
+        # Extract car model and country of origin
+        df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
      ```
-     df_carModel_Country = extract_car_model_and_origin(api_url, updated_dataset, output_base_path1)
-     ```
+
+    The code utilizes functions such as start_spark_session to initialize the Spark session and read_data_set_by_spark to read the dataset files (CSV format) into Spark DataFrames.     The main extraction is performed by the extract_car_model_and_origin function, which uses the Spark DataFrame API to select distinct car models and determine their respective         countries of origin through API calls. The results are stored in separate files for each country within the specified output path.
+
    - Optimize performance using proper caching.
        Implement caching mechanisms, both at the Spark RDD and DataFrame levels, to store intermediate results that can be reused across multiple operations. This can significantly         reduce the need to recalculate certain values.
      ```
@@ -67,8 +79,14 @@ Build a Spark application to extract results from the provided datasets.
 
      ```
          this step decreasing the run time of the appleaction around 15 sec
+
+    - Data Partitioning
+
+        Optimize data partitioning strategies, particularly during Spark transformations, to distribute data evenly across nodes. This ensures that the workload is balanced,                 preventing resource bottlenecks.
+
 2. **Update Records**
    - Read a file with updated records and merge them with the original dataset. Consider the key for your dataset to be a combination of all columns except the rank column.
+
 
 3. **Analysis Using SQL**
    - List the top 5 stolen car models in the U.S. 
