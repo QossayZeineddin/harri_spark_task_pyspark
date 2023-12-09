@@ -137,13 +137,13 @@ Build a Spark application to extract results from the provided datasets.
   
        Method Explanation:
     
-        Top 5 Stolen Car Models:
+        - Top 5 Stolen Car Models:
             Utilize Spark SQL syntax to group the DataFrame by "Make_Model," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to             the top 5 results.
     
-        Top 5 States with the Most Stolen Cars:
+        - Top 5 States with the Most Stolen Cars:
             Similar to the first analysis, group the DataFrame by "State," calculate the total thefts, rename the column, order by the total thefts in descending order, and limit to the         top 5 results.
     
-        Based on the models, what is the most country from where Americans buy their cars?:
+        - Based on the models, what is the most country from where Americans buy their cars?:
             based on the data that we have there are two Solution first take the total theft of each
              country cars and the second just count car models and its country that the american have
             Join the two DataFrames (df_report and df_carModel_Country) on the common column 'Make_Model.'
