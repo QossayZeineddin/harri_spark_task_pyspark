@@ -12,6 +12,26 @@ ORDER BY total DESC
 LIMIT 5;
 
 
+# most country  buyed in the usa beasd on car model
+SELECT mo.Country_of_Origin, COUNT(DISTINCT tr.Make_Model) AS Distinct_Make_Models
+FROM top10report tr
+INNER JOIN model_origin mo ON mo.Make_Model = tr.Make_Model
+GROUP BY mo.Country_of_Origin
+ORDER BY Distinct_Make_Models DESC;
+
+
+
+# most country  buyed in the usa beasd on totasl car models theft and its country
+
+SELECT
+    mo.Country_of_Origin,
+    SUM(CAST(tr.Thefts AS SIGNED)) AS TotalThefts,
+    COUNT(*) AS car_models_count_with_out_distinct
+FROM top10report  tr
+JOIN model_origin mo ON tr.Make_Model = mo.Make_Model
+GROUP BY mo.Country_of_Origin
+ORDER BY TotalThefts DESC;
+
 
 
 

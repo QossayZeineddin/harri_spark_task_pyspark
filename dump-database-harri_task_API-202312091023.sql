@@ -41,6 +41,29 @@ INSERT INTO `cars` VALUES (1,'Abarth','Italy'),(2,'Alfa Romeo','Italy'),(3,'Asto
 UNLOCK TABLES;
 
 --
+-- Table structure for table `model_origin`
+--
+
+DROP TABLE IF EXISTS `model_origin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `model_origin` (
+  `Make_Model` varchar(50) DEFAULT NULL,
+  `Country_of_Origin` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `model_origin`
+--
+
+LOCK TABLES `model_origin` WRITE;
+/*!40000 ALTER TABLE `model_origin` DISABLE KEYS */;
+INSERT INTO `model_origin` VALUES ('Ford Focus','America'),('Toyota Camry','Japan'),('Ford Econoline E350','America'),('Ford Taurus','America'),('GMC Yukon','Unknown'),('Nissan Frontier','Japan'),('Honda Civic','Japan'),('Toyota Tacoma','Japan'),('Dodge Charger','America'),('Acura TL','Unknown'),('Chevrolet Malibu','America'),('Chevrolet Trailblazer','America'),('Chevrolet Impala','America'),('Pontiac Grand Am','Unknown'),('Dodge Durango','America'),('Subaru Legacy','Japan'),('Chevrolet Cobalt','America'),('Toyota 4Runner','Japan'),('Dodge Intrepid','America'),('Chevrolet Pickup (Small Size)','America'),('Acura Integra','Unknown'),('Nissan Maxima','Japan'),('Dodge Caravan','America'),('Subaru Impreza','Japan'),('Chevrolet Cavalier','America'),('Toyota Corolla','Japan'),('Ford Fusion','America'),('GMC Pickup (Full Size)','Unknown'),('Chrysler Town & Country','America'),('Dodge Stratus','America'),('VW Golf','Unknown'),('Chevrolet Pickup (Full Size)','America'),('Chrysler 300/300M','America'),('Dodge Pickup (Full Size)','America'),('Ford Mustang','America'),('Ford Pickup (Small Size)','America'),('Nissan Sentra','Japan'),('Jeep Cherokee/Grand Cherokee','America'),('Pontiac Grand Prix','Unknown'),('Ford Crown Victoria','America'),('Honda CR-V','Japan'),('Hyundai Sonata','South Korea'),('Ford Explorer','America'),('Honda Accord','Japan'),('Hyundai Elantra','South Korea'),('Seat Leon','Unknown'),('Ford Pickup (Full Size)','America'),('Toyota Avalon','Japan'),('Chevrolet Tahoe','America'),('Nissan Altima','Japan');
+/*!40000 ALTER TABLE `model_origin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sheet1`
 --
 
@@ -109,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-08 17:51:23
+-- Dump completed on 2023-12-09 10:23:48
