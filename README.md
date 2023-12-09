@@ -14,9 +14,10 @@ Build a Spring Boot application to create an API for searching the country of or
 GitHub repo [Spring Boot application](https://github.com/QossayZeineddin/harri_api_task.git)  
 URL for the application : https://github.com/QossayZeineddin/harri_api_task.git  
 when yoy run the server we have multy get requset to get the data  
-1- Get the country of origin for a car name  (for example http://127.0.0.1:8080/cars/getbyBrand/bmw)  
+1- Get the country of origin for a car name  (http://127.0.0.1:8080/server/car/getbyBrand/?brand=bmw)  
+![Screenshot from 2023-12-09 14-49-40](https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/381717e2-c239-4d6f-8c85-010d0444f931)
 
-<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/b64cebfd-0e03-4758-8351-dc17f072b7e5" width="210" height="270" alt="Screenshot from 2023-12-08 16-47-07">
+<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/381717e2-c239-4d6f-8c85-010d0444f931" width="210" height="270" alt="Screenshot from 2023-12-08 16-47-07">
 
 
 2- Get the car brands of country (for example http://127.0.0.1:8080/cars/getby/Japan)  
