@@ -23,7 +23,7 @@ def read_data_set_by_spark(spark, file_paths):
 def call_api_for_country(car_brand, api_url):
 
     try:
-        response = requests.get(api_url + f'/{car_brand}')
+        response = requests.get(api_url + f'{car_brand}')
         json_response_list = response.json()
 
         if json_response_list:
@@ -51,8 +51,9 @@ def extract_car_model_and_origin(api_url, df_sheet, output_base_path):
     )
     car_models_with_origin.cache()
     newDataSet = car_models_with_origin
-    newDataSet.write.option("header","true").csv(output_base_path+"/result")
     car_models_with_origin = car_models_with_origin.repartition('Country_of_Origin')
+    car_models_with_origin.write.option("header", "true").csv(output_base_path + "/result")
+
     countries = [row.Country_of_Origin for row in car_models_with_origin.select('Country_of_Origin').distinct().collect()]
 
     def write_partition_to_file(country):
@@ -117,6 +118,7 @@ def spark_sql_query(df_report, df_carModel_Country, output_path):
     )
 
     # Top 5 states with the most stolen cars
+
     top_stolen_states = (
         df_report
         .groupBy("State")
@@ -130,7 +132,7 @@ def spark_sql_query(df_report, df_carModel_Country, output_path):
     # based on data that we have there are two Solution first take the total theft of each
     # country cars and the second just count car models and its country that the american have
 
-    ## first one
+    ## first one / the most correct solution
     # join the DataFrames on 'Make_Model'
     joined_df = (
         df_report
@@ -185,7 +187,7 @@ def spark_sql_query(df_report, df_carModel_Country, output_path):
     top_stolen_models.write.mode("overwrite").csv(f"{output_path}/top_stolen_models")
     top_stolen_states.write.mode("overwrite").csv(f"{output_path}/top_stolen_states")
     sorted_country_counts1.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts1")
-    sorted_country_counts1.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts2")
+    sorted_country_counts2.write.mode("overwrite").csv(f"{output_path}/sorted_country_counts2")
 
 
 # Main Execution Block
@@ -207,7 +209,8 @@ if __name__ == '__main__':
 
     file_paths = ['taskfiles/cars.csv', 'taskfiles/Sheet1.csv', 'taskfiles/2015_State_Top10Report_wTotalThefts.csv']
     updated_file_path = 'taskfiles/Sheet1.csv'
-    api_url = 'http://127.0.0.1:8080/cars/getbyBrand'
+    #api_url = 'http://127.0.0.1:8080/cars/getbyBrand'
+    api_url = 'http://127.0.0.1:8080/server/car/getbyBrand/?brand='
     output_base_path1 = 'taskfiles/output_API'  # where each car model with its country
     output_base_path2 = 'taskfiles/output_updated'  # the result of updated data from sheet1
     output_base_path4 = 'taskfiles/output_sql_result'  # the result of updated data from sheet1
@@ -222,7 +225,9 @@ if __name__ == '__main__':
 
 
     updated_dataset = update_dataset(df_sparkTotalThefts, df_spark_sheet)
+
     #for count query
+
     updated_dataset = updated_dataset.withColumn("Thefts", col("Thefts").cast("int"))
 
     updated_dataset.write.option("header", "true").mode("overwrite").csv(output_base_path2)
