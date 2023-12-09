@@ -151,7 +151,7 @@ Build a Spark application to extract results from the provided datasets.
             Sort the results in descending order based on the count.
     
         Display Results:
-            Display the results for each analysis using the show() method.
+            Display the results for each analysis using the show() method and saved it to csv files.
 
 ## Usage
 
