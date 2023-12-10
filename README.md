@@ -16,17 +16,18 @@ URL for the application : https://github.com/QossayZeineddin/harri_api_task.git
 when yoy run the server we have multy get requset to get the data  
 1- Get the country of origin for a car name  (http://127.0.0.1:8080/server/car/getbyBrand/?brand=bmw)  
 
-<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/381717e2-c239-4d6f-8c85-010d0444f931" width="210" height="270" alt="Screenshot from 2023-12-08 16-47-07">
+<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/381717e2-c239-4d6f-8c85-010d0444f931" width="230" height="290" alt="Screenshot from 2023-12-08 16-47-07">
 
 
-2- Get the car brands of country (for example http://127.0.0.1:8080/cars/getby/Japan)  
-
-<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/0cf33d0f-9d8c-4435-b095-d7ade0fce5a9" width="210" height="270" alt="Screenshot from 2023-12-08 16-47-38">
+2- Get the car brands of country (for example http://127.0.0.1:8080/server/car/getby/Japan)  
 
 
+<img src="https://github.com/QossayZeineddin/harri_spark_task_pyspark/assets/103140839/2a4ddd60-41a9-4c12-ba8f-082a93ef4ce7" width="230" height="290" alt="Screenshot from 2023-12-08 16-47-38">
 
-3- To get a specific numbers of car models (using limit http://127.0.0.1:8080/cars/getby/Japan/2   this get the first 2 cars in japan)  
-4- To get all cars (http://127.0.0.1:8080/cars/getAll)  
+
+
+3- To get a specific numbers of car models (using limit http://127.0.0.1:8080/server/car/getby/Japan/2   this get the first 2 cars in japan)  
+4- To get all cars (http://127.0.0.1:8080/server/car/getAll)  
 
 #### Database Configuration
 
