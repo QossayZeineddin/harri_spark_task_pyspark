@@ -21,18 +21,13 @@ def read_data_set_by_spark(spark, file_paths):
 
 # Call API for Country
 def call_api_for_country(car_brand, api_url):
-
     try:
-        response = requests.get(api_url + f'{car_brand}')
+        response = requests.get(f'{api_url}{car_brand}')
         json_response_list = response.json()
-
         if json_response_list:
-            json_response = json_response_list[0]
-            country_of_origin = json_response.get('countryOfOrigin', 'Unknown')
+            return json_response_list[0].get('countryOfOrigin', 'Unknown')
         else:
-            country_of_origin = 'Unknown'
-
-        return country_of_origin
+            return 'Unknown'
     except Exception as e:
         return f'Error: {str(e)}'
 
@@ -42,47 +37,36 @@ call_api_for_country_udf = udf(call_api_for_country, StringType())
 
 
 # Extract Car Model and Origin
+# Enhanced extract_car_model_and_origin function
 def extract_car_model_and_origin(api_url, df_sheet, output_base_path):
-
     car_models = df_sheet.select(col('Make_Model')).distinct()
     car_models_with_origin = car_models.withColumn(
         'Country_of_Origin',
         call_api_for_country_udf(split(col('Make_Model'), ' ').getItem(0), lit(api_url))
-    )
-    car_models_with_origin.cache()
-    newDataSet = car_models_with_origin
-    car_models_with_origin = car_models_with_origin.repartition('Country_of_Origin')
-    car_models_with_origin.write.option("header", "true").csv(output_base_path + "/result")
+    ).cache()
+    car_models_with_origin.repartition('Country_of_Origin').write.option("header", "true").csv(output_base_path + "/result")
 
     countries = [row.Country_of_Origin for row in car_models_with_origin.select('Country_of_Origin').distinct().collect()]
 
-    def write_partition_to_file(country):
+    for country in countries:
         country_df = car_models_with_origin.filter(col('Country_of_Origin') == country)
         file_path = f'{output_base_path}/country_{country}.csv'
         country_df.drop('Country_of_Origin').write.mode('overwrite').csv(file_path)
 
-    for country in countries:
-        write_partition_to_file(country)
-
-    return newDataSet
+    return car_models_with_origin
 
 
 def update_dataset(original_df, updated_df):
     # Define the key columns (all columns except 'Rank')
-    key_cols = [c for c in original_df.columns if c != 'Rank' and c !='Thefts']
+    key_cols = [c for c in original_df.columns if c != 'Rank' and c != 'Thefts']
 
     # Create a composite key for both DataFrames
     generate_key = concat_ws('_', *[col(c) for c in key_cols])
     original_df = original_df.withColumn('composite_key', generate_key)
     updated_df = updated_df.withColumn('composite_key', generate_key)
 
-    # Rename all columns in the updated DataFrame except for the composite key
-    for col_name in updated_df.columns:
-        if col_name != 'composite_key':
-            updated_df = updated_df.withColumnRenamed(col_name, col_name + "_updated")
-
-    # Perform a full outer join on the composite key
-    full_joined_df = original_df.join(updated_df, 'composite_key', 'full_outer')
+    # Perform a left join on the composite key
+    full_joined_df = original_df.join(updated_df.select('composite_key', *[col(c).alias(f"{c}_updated") for c in updated_df.columns if c != 'composite_key']), 'composite_key', 'left')
 
     # Coalesce each column: prefer updated data if available, else use original
     for col_name in original_df.columns:
@@ -93,12 +77,11 @@ def update_dataset(original_df, updated_df):
             )
 
     # Drop the composite key and updated columns
-    for col_name in updated_df.columns:
-        if col_name != 'composite_key':
-            full_joined_df = full_joined_df.drop(col_name)
+    full_joined_df = full_joined_df.drop('composite_key', *["{}_updated".format(c) for c in updated_df.columns if c != 'composite_key'])
 
     print("Update Complete")
-    return full_joined_df.drop('composite_key')
+    return full_joined_df
+
 
 
 def create_or_clear_directory(directory_path):
